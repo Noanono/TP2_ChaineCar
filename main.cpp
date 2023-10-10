@@ -3,7 +3,7 @@ using namespace std;
 
 #include"ChaineCar.h"
 
-int main(){
+/*int main(){
 
     ChaineCar prenom("Pierre-Ambroise"), nom("Bosse");
     prenom.Affiche();
@@ -23,6 +23,7 @@ int main(){
     cout<<endl;
     system("pause");
     nom.Affiche();
+    cout<<endl;
     cout<<"Est ce normal?"<<endl;
     system("pause");
     ChaineCar firstname;
@@ -32,11 +33,24 @@ int main(){
     cout<<endl;
     system("pause");
     prenom.Affiche();
+    cout<<endl;
     cout<<"Est ce normal?"<<endl;
     system("pause");
     cout<<"adresse de prenom "<<(void*)prenom.Getstr()<<endl;
     cout<<"adresse de firstname "<<(void*)firstname.Getstr()<<endl;
     system("pause");
     //fin partie a decommenter
+    return 0;
+}*/
+
+int main(){
+
+    ChaineCar nom("MAYER"), prenom("Kevin");
+    ChaineCar specialite("Decathlon");
+    ChaineCar sportif;
+
+    sportif = nom + " " + prenom + ": " + specialite;//concatenation
+    cout << sportif<<endl;//affichage
+
     return 0;
 }
